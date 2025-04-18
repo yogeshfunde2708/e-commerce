@@ -1,10 +1,12 @@
 import Logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import CountryDropdown from "../CountryDropdown";
-import { IoSearch } from "react-icons/io5";
 import Button from "@mui/material/Button";
 import { FaRegUser } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
+import SearchBox from './SearchBox';
+import Navigation from './Navigation';
+
 
 const Header = () => {
   return (
@@ -29,12 +31,7 @@ const Header = () => {
               </div>
               <div className="col-sm-10 d-flex align-items-center part-2">
                 <CountryDropdown />
-                <div className="headerSearch ms-3 me-3">
-                  <input type="text" placeholder="search for products"></input>
-                  <Button>
-                    <IoSearch />
-                  </Button>
-                </div>
+                <SearchBox />
                 <div className="part-3 d-flex align-items-center ms-auto">
                   <Button className="circle me-3">
                     <FaRegUser />
@@ -53,6 +50,7 @@ const Header = () => {
             </div>
           </div>
         </header>
+        <Navigation />
       </div>
     </>
   );
