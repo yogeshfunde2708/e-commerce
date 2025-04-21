@@ -2,14 +2,13 @@ import { IoIosMenu } from "react-icons/io";
 import Button from "@mui/material/Button";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { AiTwotoneHome } from "react-icons/ai";
 
 const Navigation = () => {
   return (
     <nav>
       <div className="container">
         <div className="row">
-          <div className="col-sm-3 navPart1">
+          <div className="col-sm-2 navPart1">
             <Button className="allCatTab">
               <span className="icon1 me-2">
                 <IoIosMenu />
@@ -20,34 +19,47 @@ const Navigation = () => {
               </span>
             </Button>
           </div>
-          <div className="col-sm-9 navPart2 d-flex align-items-center">
+          <div className="col-sm-10  navPart2 d-flex align-items-center">
             <ul className="list list-inline ms-auto">
               <li className="list-inline-item">
                 <Link to="/">
-                  <AiTwotoneHome />
-                  Home
+                  <Button>Home</Button>
                 </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">FASHION</Link>
+                <Link to="/">
+                  <Button>FASHION</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">ELECTRONICS</Link>
+                <Link to="/">
+                  <Button>ELECTRONICS</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">BAKERY</Link>
+                <Link to="/">
+                  <Button>BAKERY</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">GROCERY</Link>
+                <Link to="/">
+                  <Button>GROCERY</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Mobiles</Link>
+                <Link to="/">
+                  <Button>Mobiles</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">BLOG</Link>
+                <Link to="/">
+                  <Button>BLOG</Button>
+                </Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">CONTACT</Link>
+                <Link to="/">
+                  <Button>CONTACT</Button>
+                </Link>
               </li>
             </ul>
           </div>
