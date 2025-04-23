@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FaAngleRight } from "react-icons/fa6";
 
 const Navigation = () => {
   const [isOpenSidebarVal, setIsOpenSidebarVal] = useState(false);
@@ -33,7 +34,7 @@ const Navigation = () => {
                 <ul>
                   <li>
                     <Link to="/">
-                      <Button>men</Button>
+                      <Button>men <FaAngleRight className="ms-auto"/></Button>
                     </Link>
                     <div className="submenu">
                       <Link to="/">
@@ -49,38 +50,115 @@ const Navigation = () => {
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>women</Button>
+                      <Button>women <FaAngleRight className="ms-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>watches</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>beauty</Button>
+                      <Button>beauty <FaAngleRight className="ms-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>watches</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>watches</Button>
+                      <Button>watches <FaAngleRight className="ms-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>watches</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>kids</Button>
+                      <Button>kids <FaAngleRight className="ms-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>watches</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>gift</Button>
+                      <Button>gift <FaAngleRight className="ms-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>watches</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>blog</Button>
+                      <Button>blog <FaAngleRight className="ms-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>watches</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
-                      <Button>contact</Button>
+                      <Button>contact <FaAngleRight className="ms-auto" /></Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>footwear</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>watches</Button>
+                      </Link>
+                    </div>
                   </li>
                 </ul>
               </div>
