@@ -18,28 +18,21 @@ const HomeBanner = () => {
         <Slider {...settings}>
           <div className="item">
             <img
-              src="https://cmsimages.shoppersstop.com/Entry_Banner_web_90704e9cc4/Entry_Banner_web_90704e9cc4.png"
+              src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-2.jpg"
               className="w-100"
               alt=""
             />
           </div>
           <div className="item">
             <img
-              src="https://cmsimages.shoppersstop.com/watch_main_kv_web_e69d8346be/watch_main_kv_web_e69d8346be.png"
+              src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-3.jpg"
               className="w-100"
               alt=""
             />
           </div>
           <div className="item">
             <img
-              src="https://cmsimages.shoppersstop.com/SS_25_pvt_brands_main_kv_web_0cf0856712/SS_25_pvt_brands_main_kv_web_0cf0856712.png"
-              className="w-100"
-              alt=""
-            />
-          </div>
-          <div className="item">
-          <img
-              src="https://cmsimages.shoppersstop.com/WW_web_db1b8a41d2/WW_web_db1b8a41d2.png"
+              src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-1.jpg"
               className="w-100"
               alt=""
             />
