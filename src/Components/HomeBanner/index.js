@@ -13,7 +13,7 @@ const HomeBanner = () => {
   };
 
   return (
-    <>
+   <div className="container">
       <div className="homeBannerSection">
         <Slider {...settings}>
           <div className="item">
@@ -39,7 +39,7 @@ const HomeBanner = () => {
           </div>
         </Slider>
       </div>
-    </>
+      </div>
   );
 };
 
