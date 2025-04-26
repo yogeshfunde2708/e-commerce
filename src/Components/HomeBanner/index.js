@@ -1,45 +1,56 @@
 import React from "react";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation, Autoplay } from "swiper/modules";
 
 const HomeBanner = () => {
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows:true,
-    autoplay: true
-  };
 
   return (
-   <div className="container">
+    <div className="container mt-3">
       <div className="homeBannerSection">
-        <Slider {...settings}>
-          <div className="item">
-            <img
-              src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-2.jpg"
-              className="w-100"
-              alt=""
-            />
-          </div>
-          <div className="item">
-            <img
-              src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-3.jpg"
-              className="w-100"
-              alt=""
-            />
-          </div>
-          <div className="item">
-            <img
-              src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-1.jpg"
-              className="w-100"
-              alt=""
-            />
-          </div>
-        </Slider>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={15}
+          navigation={true}
+          loop={false}
+          autoplay={{
+            delay:2500,
+            disableOnInteraction:false,
+          }}
+          modules={[Navigation, Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="item">
+              <img
+                src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-2.jpg"
+                className="w-100"
+                alt=""
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="item">
+              <img
+                src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-3.jpg"
+                className="w-100"
+                alt=""
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="item">
+              <img
+                src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-1.jpg"
+                className="w-100"
+                alt=""
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
-      </div>
+    </div>
   );
 };
 
