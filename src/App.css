@@ -986,3 +986,67 @@ footer .copyright ul li a svg {
 .productModal .actions button svg {
   font-size: 15px;
 }
+.product_Listing_Page{
+  padding: 35px 0px;
+}
+.product_Listing_Page .productListing{
+  gap: 20px;
+}
+.product_Listing_Page .productListing .sidebar{
+  width: 20px;
+  flex: 0 0 20%;
+}
+.product_Listing_Page .productListing .sidebar .filterbox{
+  margin-bottom: 35px;
+}
+.product_Listing_Page .productListing .sidebar .filterbox h6{
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.product_Listing_Page .productListing .sidebar .scroll{
+  padding-left: 10px;
+  max-height: 180px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.product_Listing_Page .productListing .sidebar .scroll::-webkit-scrollbar{
+  width: 5px !important;
+  height: 5px !important;
+}
+.product_Listing_Page .productListing .sidebar .scroll ul{
+  margin-bottom: 0px;
+}
+.product_Listing_Page .productListing .sidebar .scroll ul li{
+  list-style: none;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.css-12wne2w-MuiButtonBase-root-MuiCheckBox-root{
+  padding: 2px !important;
+}
+.css-ahj2mt-MuiTypography-root{
+  font-size: 13px !important;
+}
+.css-i4bv87-MuiSvgIcon-root{
+  width: 20px;
+  height: 20px;
+}
+.css-12wne2w-MuiButtonBase-root-MuiCheckBox-root.Mui-checked, .css-12wne2w-MuiButtonBase-root-MuiCheckBox-root.MuiCheckBox-indeterminate{
+color: #233a95;
+}
+.product_Listing_Page .productListing .content_right{
+  padding-left: 50px;
+  width: 80px;
+  flex: 0 0 80%;
+}
+.range-slider{
+  height: 5px !important;
+}
+.range-slider .range-slider__thumb,.range-slider .range-slider__range{
+  background: #233a95;
+}
+.range-slider .range-slider__thumb{
+  width: 15px !important;
+  height: 15px !important;
+}
