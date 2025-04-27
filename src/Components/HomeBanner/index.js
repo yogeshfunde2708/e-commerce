@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
+import slideBanner1 from "../../assets/images/slideBanner1.jpg"
+import slideBanner2 from "../../assets/images/slideBanner2.jpg"
 
 const HomeBanner = () => {
 
@@ -24,7 +26,8 @@ const HomeBanner = () => {
           <SwiperSlide>
             <div className="item">
               <img
-                src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-2.jpg"
+                src={slideBanner1}
+                
                 className="w-100"
                 alt=""
               />
@@ -33,13 +36,13 @@ const HomeBanner = () => {
           <SwiperSlide>
             <div className="item">
               <img
-                src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/slider-3.jpg"
+                src={slideBanner2}
                 className="w-100"
                 alt=""
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="item">
               <img
                 src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/slider-image-1.jpg"
@@ -47,7 +50,7 @@ const HomeBanner = () => {
                 alt=""
               />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>

@@ -118,6 +118,7 @@ const Sidebar = () => {
               From: <strong className="text-dark">Rs:{value[1]}</strong>
             </span>
           </div>
+          <br />
           <div className="filterBox">
             <h6>PRODUCT STATUS</h6>
             <div className="scroll">
@@ -141,6 +142,7 @@ const Sidebar = () => {
               </ul>
             </div>
           </div>
+          <br />
           <div className="filterBox">
             <h6>Brands</h6>
             <div className="scroll">
