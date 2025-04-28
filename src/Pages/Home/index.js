@@ -11,6 +11,8 @@ import banner3 from "../../assets/images/banner3.jpg";
 import banner4 from "../../assets/images/banner4.jpg";
 import newsLetterImg from "../../assets/images/coupon.png";
 import { IoMailOutline } from "react-icons/io5";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 const Home = () => {
   return (
@@ -42,8 +44,57 @@ const Home = () => {
                   View all <IoIosArrowRoundForward />
                 </Button>
               </div>
+
+              <div className="product_row w-100 mt-2">
+                <Swiper
+                  slidesPerView={4}
+                  spaceBetween={0}
+                  navigation={true}
+                  slidesPerGroup={3}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    {" "}
+                    <ProductItem />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <ProductItem />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <ProductItem />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <ProductItem />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <ProductItem />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <ProductItem />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    <ProductItem />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <div className="d-flex align-items-center mt-4">
+                <div className="info w-75">
+                  <h3 className="mb-0">New Products</h3>
+                  <p className="text-light text-sml mb-0">
+                    New product with updated stocks
+                  </p>
+                </div>
+                <Button className="viewAllBtn ms-auto"> View All <IoIosArrowRoundForward/></Button>
+              </div>
               <div className="product_row productrow2 w-100 mt-4 d-flex">
-                <ProductItem />
+                 <ProductItem />
                 <ProductItem />
                 <ProductItem />
                 <ProductItem />
@@ -79,7 +130,7 @@ const Home = () => {
               </p>
               <form>
                 <IoMailOutline />
-                <input type="text" placeholder="Your Email Address"/>
+                <input type="text" placeholder="Your Email Address" />
                 <Button>Subscribe</Button>
               </form>
             </div>
@@ -89,7 +140,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
     </>
   );
 };

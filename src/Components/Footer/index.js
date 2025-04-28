@@ -191,7 +191,7 @@ const Footer = () => {
           <p className="mb-0">
             Copyright 2025. All rights reserved.
           </p>
-          <ul list list-inline>
+          <ul className="list list-inline ms-auto">
             <li className="list-inline-item">
                 <Link to="#"><FaFacebookF /></Link>
             </li>
