@@ -9,6 +9,9 @@ import axios from "axios";
 import ProductModel from "./Components/ProductModel";
 import Listing from "./Pages/Listing";
 import ProductDetail from "./Pages/ProductDetail";
+import Cart from "./Pages/Cart";
+import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
 
 const MyContext = createContext();
 
@@ -16,6 +19,8 @@ function App() {
   const [countryList, setCountryList] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState("");
   const [isOpenProductModal, setIsOpenProductModal] = useState(false);
+  const [isHeaderFooterShow, setIsHeaderFooterShow] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
 
   useEffect(() => {
     getCountry("https://countriesnow.space/api/v0.1/countries/");
@@ -33,17 +38,28 @@ function App() {
     setSelectedCountry,
     isOpenProductModal,
     setIsOpenProductModal,
+    isHeaderFooterShow,
+    setIsHeaderFooterShow,
+    isLogin,
+    setIsLogin
   };
   return (
     <>
       <MyContext.Provider value={values}>
-        <Header />
+        {
+          isHeaderFooterShow === true && <Header/>
+        }
         <Routes>
           <Route path="/" exact={true} element={<Home />}></Route>
           <Route path="/cat/:id" exact={true} element={<Listing />}></Route>
           <Route path="/product/:id" exact={true} element={<ProductDetail />}></Route>
+          <Route path="/cart" exact={true} element={<Cart />}></Route>
+          <Route path="/signIn" exact={true} element={<SignIn />}></Route>
+          <Route path="/signUp" exact={true} element={<SignUp />}></Route>
         </Routes>
-        <Footer />
+        {
+          isHeaderFooterShow === true && <Footer/>
+        }
         {
       isOpenProductModal === true && <ProductModel />
       }

@@ -187,7 +187,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="copyright mt-3 pt-3 pb-3 d-flex mb-0">
+        <div className="copyright mt-3 pt-3 pb-3 d-flex mb-0 socials">
           <p className="mb-0">
             Copyright 2025. All rights reserved.
           </p>
